@@ -1,0 +1,71 @@
+
+<div class="space"></div>
+<div fxLayout="row wrap"  fxLayoutAlign="center center" >
+  <div class="menuDiv" fxFlex="100%" fxFlex.gt-sm="100%" fxFlex.lt-sm="100%"  fxLayoutAlign="start center" fxLayoutGap="5Px">
+    <div fxLayoutAlign="center">
+      <mat-icon>home</mat-icon>
+      <span class="menuTitle">MyFlex</span>
+      </div>
+      <div fxFlex ></div>
+        <div fxHide.xs fxShow> Login | About | Contact Us 
+        </div >
+           <div fxHide.xs fxShow>  
+              <button mat-icon-button [matMenuTriggerFor]="menu2">
+               <mat-icon>menu</mat-icon>
+              </button>
+              <mat-menu #menu2="matMenu">
+                  <button mat-menu-item>Sign up</button>
+              </mat-menu>  
+            </div>
+        
+  <div fxHide fxShow.xs>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item >Login</button>
+      <button mat-menu-item>About</button>
+      <button mat-menu-item>Contact us</button>
+      <button mat-menu-item [matMenuTriggerFor]="menu2">Register</button>
+    </mat-menu>
+    
+  </div>
+  </div>
+
+<!-- second Div-->
+<div class="space" fxFlex="100%"></div>
+<div  class="secondDiv" fxFlex="100%" fxFlex.sm="100%" fxFlex.xs="100%"   fxLayout=" wrap">
+<div  class="divone" fxFlex="25%" fxFlex.sm="50%" fxFlex.xs="100%"  fxLayoutAlign="center center">one</div>
+<div  class="divtwo" fxFlex="25%" fxFlex.sm="50%" fxFlex.xs="100%"  fxLayoutAlign="center center">two </div>
+<div  class="divthree"  fxFlex="50%" fxFlex.sm="100%" fxFlex.xs="100%"  fxLayoutAlign="center center">three</div>
+</div>
+<!-- second Div-->
+<!-- third -->
+<div class="space" fxFlex="100%"></div>
+<div  class="secondDiv" fxFlex="100%" fxFlex.sm="100%" fxFlex.xs="100%"   fxLayout=" wrap">
+<div   fxFlex="50%"  fxFlex.sm="50%" fxFlex.xs="100%"  fxLayout=" wrap">
+  <div class="divthree" fxFlex="50%" fxFlex.sm="100%" fxFlex.xs="100%" fxLayoutAlign="center center">4</div>
+  <div class="divone" fxFlex="50%"  fxFlex.sm="100%" fxFlex.xs="100%"  fxLayoutAlign="center center" >5</div>
+</div>
+<div   fxFlex="50%"  fxFlex.sm="50%" fxFlex.xs="100%" fxLayout=" wrap">
+<div class="divsix" fxFlex="100%"  fxFlex.sm="100%" fxFlex.xs="100%" fxLayoutAlign="center center" >Six</div>
+</div>
+</div>
+<!-- end third -->
+<div class="space" fxFlex="100%"></div>
+<div  class="lastDiv" fxFlex="100%" fxFlex.sm="100%" fxFlex.xs="100%"   fxLayout=" wrap">
+<div   fxFlex="80%"  fxFlex.sm="100%" fxFlex.xs="100%"  fxLayout=" wrap">
+  <div class="divbig" fxFlex="100%"  fxFlex.sm="100%" fxFlex.xs="100%"  fxLayoutAlign="center center" >hello</div>
+</div>
+<div fxFlex="20%"  fxFlex.sm="100%" fxFlex.xs="100%" fxLayout=" wrap">
+  <div class="divone" fxFlex="100%"  fxFlex.sm="33%" fxFlex.xs="33%"  fxLayoutAlign="center center" >5</div>
+  <div class="divtwo" fxFlex="100%"  fxFlex.sm="34%" fxFlex.xs="34%"  fxLayoutAlign="center center" >5</div>
+  <div class="divsix" fxFlex="100%"  fxFlex.sm="33%" fxFlex.xs="33%"  fxLayoutAlign="center center" >5</div>
+</div>
+
+<!-- copyright -->
+
+    <div class="copyright" fxFlex="100%"  fxFlex.sm="100%" fxFlex.xs="100%"  fxLayoutAlign="center center" >@Made by <a href="https://github.com/nikhilniky">Nikhil</a></div>
+    <div class="space" fxFlex="100%"></div>
+</div>
+
